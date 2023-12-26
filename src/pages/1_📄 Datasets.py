@@ -63,14 +63,14 @@ def main():
     subtitle("Additional metadata", size=5)
     normal_text("Each patient may have been scanned once or twice. Each scan contains a series of images. <code>train_series_meta.csv</code> is provided by RSNA and contains additional metadata for each CT scan series in the dataset.")
     normal_text("")
-    df = pd.read_csv(r"./assets/train_series_meta.csv")
+    df = pd.read_csv("/mount/src/project-rats/src/assets/train_series_meta.csv")
     st.dataframe(df, hide_index=True, use_container_width=True)
 
     subtitle("Image Dataset Preview", size=5)
     normal_text("Only CT scans of patient 10082, series 8192 is included in this preview. There are a total of 163 CT images in this series.")
 
     # Directory containing DICOM files
-    dicom_directory = "./assets/sample_images/"
+    dicom_directory = "/mount/src/project-rats/src/assets/sample_images/"
 
     # Custom function to extract number from filename
     def extract_number(filename):
