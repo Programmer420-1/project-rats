@@ -4,3 +4,4 @@
 /.vscode*
 /start.bat
 /10082_8139.zip
+Lib/site-packages/pip/_internal/__pycache__/wheel_builder.cpython-311.pyc

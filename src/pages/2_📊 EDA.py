@@ -15,7 +15,7 @@ from PIL import Image
 st.set_page_config(
     page_title="Project RATS | EDA",
     layout="wide",
-    page_icon= Image.open(r".\static\favicons\favicon-16x16.png")
+    page_icon= Image.open(r"./static/favicons/favicon-16x16.png")
 )
 
 def main():

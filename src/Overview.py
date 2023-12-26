@@ -10,7 +10,7 @@ st.set_page_config(
     page_title="Project RATS",
     layout="wide",
     initial_sidebar_state='collapsed',
-    page_icon= Image.open(r".\static\favicons\favicon-16x16.png"),
+    page_icon= Image.open(r"./static/favicons/favicon-16x16.png"),
     menu_items={
         'Report a bug': "mailto:u2102798@siswa.um.edu.my",
         'About': 

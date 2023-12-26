@@ -1,0 +1,6 @@
+httpx
+Pillow
+matplotlib
+numpy
+pandas
+seaborn
