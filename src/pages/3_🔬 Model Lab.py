@@ -10,6 +10,8 @@ from widgets.general import normal_text, vertical_gap, subtitle
 from util.custom_theme import load_css, load_modellab_css
 import params
 
+import os
+
 # Set page configuration for better aesthetics
 st.set_page_config(
     page_title="Project RATS | Model Lab",
