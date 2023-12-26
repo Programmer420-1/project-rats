@@ -50,14 +50,14 @@ def main():
 
     subtitle("Understanding Data", size=5)
     normal_text("In this dataset, each patient is assigned uniquely with 1 numeric <code>patient_ID</code>. A patient can have multiple <code>series_ID</code>, each corresponding to a different medical procedure or examination. Each <code>series ID</code> contains multiple <code>instance numbers</code>, each representing an individual image within that series. The hierarchical structure is illustrated below:")
-    image("understanding data.png", style="width:32rem;border-radius:0px") 
+    image("/mount/src/project-rats/src/static/understanding data.png", style="width:32rem;border-radius:0px") 
     
     # Dataset labels: Dataframe explorer
     vertical_gap(3)
     subtitle("Data Labels", size=5)
     normal_text("<code>train.csv</code> is provided by RSNA and contains target labels for the dataset. Note that patients labeled healthy may still have other medical issues, such as cancer or broken bones, that don't happen to be covered by the competition labels.")
     normal_text("There are 3 target labels (healthy, low, high) for kidney, liver and spleen while 2 target labels (healthy, injury) for bowels and extravasation injury. A binary target label called <code>any injury</code> is also provided to indicate whether the patient has any injury at all.")
-    df = pd.read_csv(r"./assets/train.csv")
+    df = pd.read_csv("/mount/src/project-rats/src/assets/train.csv")
     st.dataframe(df, hide_index=True)
 
     subtitle("Additional metadata", size=5)
