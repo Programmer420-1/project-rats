@@ -1,0 +1,367 @@
+.overview-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    margin-top: -2rem;
+
+    .logo {
+      max-width: 100%;
+      padding: 0 2rem;
+    }
+  }
+
+  span {
+    margin: 0;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    .get-started-frame {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+
+      .get-started-container {
+        display: flex;
+        column-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin: 2.618rem 0 1rem 0;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        animation: heartPulse 1s infinite ease-in-out;
+
+
+        span {
+          font-family: monospace;
+          margin: 0;
+          // margin-bottom: -0.8rem;
+          padding: 0;
+          color: inherit;
+          font-weight: 300;
+
+        }
+
+        &:hover {
+          // animation: none;
+          color: var(--red);
+          opacity: 0.8;
+          column-gap: 1rem;
+        }
+
+      }
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  span {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.explore-container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+
+  margin: 1rem 0 2rem 0;
+
+  a {
+    min-width: 24rem;
+    max-width: 30%;
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+
+    .card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+
+      padding: 1.618rem 2rem;
+      margin-bottom: 2rem;
+
+      transition: all 0.2s ease-in-out;
+      transform-origin: center center;
+
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.618rem;
+
+        .card-title {
+          margin: 0;
+          padding: 0;
+          color: var(--blue);
+        }
+
+        .card-desc {
+          margin: 0;
+        }
+      }
+
+      .icon-frame {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          height: inherit;
+          width: min-content;
+          border-radius: 50rem;
+
+          padding: 0.618rem;
+
+          background-color: rgba(255, 255, 255, 0.3);
+
+          transition: all 0.2s ease-in-out;
+
+          svg {
+            height: 100%;
+            width: auto;
+
+            path {
+              fill: rgba(255, 255, 255, 0.7);
+            }
+
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .card {
+        transform: scale(1.05);
+        border: 1px solid white;
+      }
+
+      .icon-frame {
+        .icon-container {
+          background-color: rgba(255, 255, 255, 0.7);
+
+          svg {
+            height: 100%;
+            width: auto;
+
+            path {
+              fill: white;
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+.objectives-container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
+
+  margin: 1rem 0 2rem 0;
+  padding: 0 1rem;
+
+  .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+
+    padding: 1.618rem 2rem;
+
+    transition: all 0.2s ease-in-out;
+    transform-origin: center center;
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.618rem;
+
+      .card-title {
+        margin: 0;
+        padding: 0;
+        color: var(--blue);
+      }
+
+      .card-desc {
+        margin: 0;
+      }
+    }
+
+    .icon-frame {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: inherit;
+        width: min-content;
+        border-radius: 50rem;
+
+        padding: 0.618rem;
+
+        background-color: rgba(255, 255, 255, 0.3);
+
+        transition: all 0.2s ease-in-out;
+
+        svg {
+          height: 100%;
+          width: auto;
+
+          path {
+            fill: rgba(255, 255, 255, 0.7);
+          }
+
+        }
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      border: 1px solid white;
+    }
+  }
+}
+
+
+$duration: 5s;
+$text-color: rgba(255, 255, 255, 0.3);
+$bgr-color: inherit;
+
+.shine,
+.chrome {
+  font-size: 3em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.shine {
+  background: inherit gradient(linear, left top, right top, from(inherit), to(inherit), color-stop(0.5, #fff)) 0 0 no-repeat;
+  background-size: 150px;
+  color: $text-color;
+  background-clip: text;
+  animation-name: shine;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+.chrome {
+  background: inherit gradient(linear, left top, right top, from(inherit), to(inherit), color-stop(0.5, #fff)) 0 0 no-repeat;
+  background-image: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-size: 200px;
+  color: $text-color;
+  background-clip: text;
+  animation-name: shine;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes shine {
+
+  0%,
+  10% {
+    background-position: -1000px;
+  }
+
+  20% {
+    background-position: top left;
+  }
+
+  90% {
+    background-position: top right;
+  }
+
+  100% {
+    background-position: 1000px;
+  }
+}
+
+@keyframes heartPulse {
+
+  0%,
+  100% {
+    column-gap: 2rem;
+    /* Relaxed state */
+  }
+
+  10% {
+    column-gap: 1.5rem;
+    /* First contraction (stronger) */
+  }
+
+  20%,
+  30% {
+    column-gap: 2rem;
+    /* Between peaks */
+  }
+
+  40% {
+    column-gap: 1.8rem;
+    /* Second contraction (weaker) */
+  }
+
+  50% {
+    column-gap: 2rem;
+    /* Back to relaxed state */
+  }
+}
