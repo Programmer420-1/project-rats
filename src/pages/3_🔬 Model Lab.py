@@ -16,7 +16,7 @@ import os
 st.set_page_config(
     page_title="Project RATS | Model Lab",
     layout="wide",
-    page_icon= Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'favicons', 'favicon-16x16.png'))
+    page_icon= Image.open(os.path.join('/mount/src/project-rats/src', 'static', 'favicons', 'favicon-16x16.png'))
 )
 
 # Function to main app

@@ -17,12 +17,11 @@ import os
 st.set_page_config(
     page_title="Project RATS | EDA",
     layout="wide",
-    page_icon= Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'favicons', 'favicon-16x16.png'))
+    page_icon= Image.open(os.path.join('/mount/src/project-rats/src', 'static', 'favicons', 'favicon-16x16.png'))
 )
 
 def main():
 
-    print(os.listdir())
     load_css()
     st.header("Exploratory Data Analysis (EDA)")
     normal_text("The main idea of EDA is to harvest the interesting pattern and relations among the variables in the dataset (IBM, 2020). Below covers all the visualization of EDA techniques done to the dataset.", style="margin-bottom:-1.618rem")
