@@ -11,6 +11,8 @@ from widgets.eda import binary_class_distribution \
     , slice_thickness_distribution
 from PIL import Image
 
+import os
+
 # Set page configuration for better aesthetics
 st.set_page_config(
     page_title="Project RATS | EDA",
@@ -19,6 +21,8 @@ st.set_page_config(
 )
 
 def main():
+
+    print(os.listdir())
     load_css()
     st.header("Exploratory Data Analysis (EDA)")
     normal_text("The main idea of EDA is to harvest the interesting pattern and relations among the variables in the dataset (IBM, 2020). Below covers all the visualization of EDA techniques done to the dataset.", style="margin-bottom:-1.618rem")
