@@ -43,7 +43,7 @@ def main():
     st.markdown(f"""
         <div class='overview-title-container'>
             <div class='logo-container'>
-                <img class='logo' src={os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'Logo_text_hor_sub_dark.png')}alt="Logo"/>    
+                <img class='logo' src={os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'Logo_text_hor_sub_dark.png')} alt="Logo"/>    
             </div>
             <span class='h2'>
                 Witnessing the <em>new era</em> of abdominal trauma diagnosis: 
