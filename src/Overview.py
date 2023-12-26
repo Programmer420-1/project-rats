@@ -4,13 +4,14 @@ from widgets.general import normal_text, subtitle, ordered_list, vertical_gap
 from util.custom_theme import load_css, load_overview_css, is_dark_theme
 from PIL import Image
 import streamlit.components.v1 as components
+import os
 
 # Set page configuration for better aesthetics
 st.set_page_config(
     page_title="Project RATS",
     layout="wide",
     initial_sidebar_state='collapsed',
-    page_icon= Image.open("./static/favicons/favicon-16x16.png"),
+    page_icon= Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'favicons', 'favicon-16x16.png')),
     menu_items={
         'Report a bug': "mailto:u2102798@siswa.um.edu.my",
         'About': 
