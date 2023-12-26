@@ -1,3 +1,4 @@
+import os 
 DEV_INFERENCE_API_BASEURL = "http://localhost:8000/infer"
 DEV_INFERENCE_V2_API_BASEURL = "http://localhost:8000/v2/infer"
 DEV_TEST_INFERENCE_API_BASEURL = "http://localhost:8000/infer_test"
@@ -12,6 +13,6 @@ PROD_INFERENCE_STATUS_API_BASEURL = "http://34.30.94.255:8000/inference/status"
 
 MODEL_CHOICE = ('default', 'finetuned')
 
-GLOBAL_CSS = "./static/styles/global.css"
-OVERVIEW_CSS = "./static/styles/overview.css"
-MODEL_LAB_CSS = "./static/styles/model_lab.css"
+GLOBAL_CSS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'styles', 'global.css')
+OVERVIEW_CSS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'styles', 'overview.css')
+MODEL_LAB_CSS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'styles', 'model_lab.css')
