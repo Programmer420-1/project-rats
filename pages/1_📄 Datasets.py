@@ -21,7 +21,7 @@ def main():
 
     # Dataset provider
     vertical_gap(1)
-    image("../app/static/imgs/RSNA-Logo.jpg",title="Dataset Provider")  
+    image("imgs/RSNA-Logo.jpg",title="Dataset Provider")  
 
     # Row 1
     vertical_gap(3)
@@ -50,7 +50,7 @@ def main():
 
     subtitle("Understanding Data", size=5)
     normal_text("In this dataset, each patient is assigned uniquely with 1 numeric <code>patient_ID</code>. A patient can have multiple <code>series_ID</code>, each corresponding to a different medical procedure or examination. Each <code>series ID</code> contains multiple <code>instance numbers</code>, each representing an individual image within that series. The hierarchical structure is illustrated below:")
-    image("../app/static/imgs/understanding data.png", style="width:32rem;border-radius:0px") 
+    image("imgs/understanding data.png", style="width:32rem;border-radius:0px") 
     
     # Dataset labels: Dataframe explorer
     vertical_gap(3)

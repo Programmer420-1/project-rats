@@ -8,8 +8,8 @@ from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 import os
 
-df = pd.read_csv(os.path.join('/mount/src/project-rats/src', 'assets', 'dataset_summary.csv'))
-df_dicom = pd.read_parquet(os.path.join('/mount/src/project-rats/src', 'assets', 'train_dicom_tags.parquet'))
+df = pd.read_csv(os.path.join('/mount/src/project-rats', 'assets', 'dataset_summary.csv'))
+df_dicom = pd.read_parquet(os.path.join('/mount/src/project-rats', 'assets', 'train_dicom_tags.parquet'))
 
 @st.cache_data
 def n_scans_per_study():
