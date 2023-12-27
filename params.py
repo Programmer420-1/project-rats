@@ -13,6 +13,6 @@ PROD_INFERENCE_STATUS_API_BASEURL = "http://34.30.94.255:8000/inference/status"
 
 MODEL_CHOICE = ('default', 'finetuned')
 
-GLOBAL_CSS = os.path.join('/mount/src/project-rats/src', 'static', 'styles', 'global.css')
-OVERVIEW_CSS = os.path.join('/mount/src/project-rats/src', 'static', 'styles', 'overview.css')
-MODEL_LAB_CSS = os.path.join('/mount/src/project-rats/src', 'static', 'styles', 'model_lab.css')
+GLOBAL_CSS = os.path.join('static', 'styles', 'global.css')
+OVERVIEW_CSS = os.path.join('static', 'styles', 'overview.css')
+MODEL_LAB_CSS = os.path.join('static', 'styles', 'model_lab.css')
