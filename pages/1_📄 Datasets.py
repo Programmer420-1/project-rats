@@ -21,7 +21,7 @@ def main():
 
     # Dataset provider
     vertical_gap(1)
-    image("app/static/imgs/RSNA-Logo.jpg",title="Dataset Provider")  
+    image("../app/static/imgs/RSNA-Logo.jpg",title="Dataset Provider")  
 
     # Row 1
     vertical_gap(3)
@@ -50,27 +50,27 @@ def main():
 
     subtitle("Understanding Data", size=5)
     normal_text("In this dataset, each patient is assigned uniquely with 1 numeric <code>patient_ID</code>. A patient can have multiple <code>series_ID</code>, each corresponding to a different medical procedure or examination. Each <code>series ID</code> contains multiple <code>instance numbers</code>, each representing an individual image within that series. The hierarchical structure is illustrated below:")
-    image("app/static/imgs/understanding data.png", style="width:32rem;border-radius:0px") 
+    image("../app/static/imgs/understanding data.png", style="width:32rem;border-radius:0px") 
     
     # Dataset labels: Dataframe explorer
     vertical_gap(3)
     subtitle("Data Labels", size=5)
     normal_text("<code>train.csv</code> is provided by RSNA and contains target labels for the dataset. Note that patients labeled healthy may still have other medical issues, such as cancer or broken bones, that don't happen to be covered by the competition labels.")
     normal_text("There are 3 target labels (healthy, low, high) for kidney, liver and spleen while 2 target labels (healthy, injury) for bowels and extravasation injury. A binary target label called <code>any injury</code> is also provided to indicate whether the patient has any injury at all.")
-    df = pd.read_csv("/mount/src/project-rats/src/assets/train.csv")
+    df = pd.read_csv("/mount/src/project-rats/assets/train.csv")
     st.dataframe(df, hide_index=True)
 
     subtitle("Additional metadata", size=5)
     normal_text("Each patient may have been scanned once or twice. Each scan contains a series of images. <code>train_series_meta.csv</code> is provided by RSNA and contains additional metadata for each CT scan series in the dataset.")
     normal_text("")
-    df = pd.read_csv("/mount/src/project-rats/src/assets/train_series_meta.csv")
+    df = pd.read_csv("/mount/src/project-rats/assets/train_series_meta.csv")
     st.dataframe(df, hide_index=True, use_container_width=True)
 
     subtitle("Image Dataset Preview", size=5)
     normal_text("Only CT scans of patient 10082, series 8192 is included in this preview. There are a total of 163 CT images in this series.")
 
     # Directory containing DICOM files
-    dicom_directory = "/mount/src/project-rats/src/assets/sample_images/"
+    dicom_directory = "/mount/src/project-rats/assets/sample_images/"
 
     # Custom function to extract number from filename
     def extract_number(filename):
