@@ -1,6 +1,8 @@
 @font-face {
   font-family: "ROG";
-  src: url("/mount/src/project-rats/src/static/fonts/rogfonts-regular-webfont.woff2") format("woff2"), url("/mount/src/project-rats/src/static/fonts/rogfonts-regular-webfont.woff") format("woff");
+  src: url('app/static/fonts/ROGFONTS-REGULAR.otf') format('opentype'),        
+        url('app/static/fonts/rogfonts-regular-webfont.woff2') format('woff2'),
+        url('app/static/fonts/rogfonts-regular-webfont.woff') format('woff');
 }
 :root {
   --red: #ff0314;
