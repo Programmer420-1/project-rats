@@ -93,10 +93,10 @@ def main():
                 </div>
             </div>
             </a>
-            <a href='/EDA_&_Model_Comparisons'>
+            <a href='/EDA'>
                 <div class="card">
                     <div class='card-text'>
-                        <span class='h6 card-title'>📊 EDA & Model Comparisons</span>
+                        <span class='h6 card-title'>📊 EDA</span>
                         <span class='text card-desc'>Embark on a data exploration journey with our extensive EDA. Uncover patterns, anomalies, and correlations that drive the analytical strategy of <span class='project-rats'><span class='project'>Project&nbsp&nbsp</span><span class='rats'>RATS</span></span>.</span>
                     </div>
                     <div class='icon-frame'>
