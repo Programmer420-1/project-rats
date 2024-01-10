@@ -11,7 +11,7 @@ import re
 st.set_page_config(
     page_title="Project RATS | Datasets",
     layout="wide",
-    page_icon= Image.open(os.path.join('/mount/src/project-rats', 'static', 'favicons', 'favicon-16x16.png'))
+    page_icon= Image.open(os.path.join('static', 'favicons', 'favicon-16x16.png'))
 )
 
 def main():
@@ -57,20 +57,20 @@ def main():
     subtitle("Data Labels", size=5)
     normal_text("<code>train.csv</code> is provided by RSNA and contains target labels for the dataset. Note that patients labeled healthy may still have other medical issues, such as cancer or broken bones, that don't happen to be covered by the competition labels.")
     normal_text("There are 3 target labels (healthy, low, high) for kidney, liver and spleen while 2 target labels (healthy, injury) for bowels and extravasation injury. A binary target label called <code>any injury</code> is also provided to indicate whether the patient has any injury at all.")
-    df = pd.read_csv("/mount/src/project-rats/assets/train.csv")
+    df = pd.read_csv("assets/train.csv")
     st.dataframe(df, hide_index=True)
 
     subtitle("Additional metadata", size=5)
     normal_text("Each patient may have been scanned once or twice. Each scan contains a series of images. <code>train_series_meta.csv</code> is provided by RSNA and contains additional metadata for each CT scan series in the dataset.")
     normal_text("")
-    df = pd.read_csv("/mount/src/project-rats/assets/train_series_meta.csv")
+    df = pd.read_csv("assets/train_series_meta.csv")
     st.dataframe(df, hide_index=True, use_container_width=True)
 
     subtitle("Image Dataset Preview", size=5)
     normal_text("Only CT scans of patient 10082, series 8192 is included in this preview. There are a total of 163 CT images in this series.")
 
     # Directory containing DICOM files
-    dicom_directory = "/mount/src/project-rats/assets/sample_images/"
+    dicom_directory = "assets/sample_images/"
 
     # Custom function to extract number from filename
     def extract_number(filename):

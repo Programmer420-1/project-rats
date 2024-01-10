@@ -8,8 +8,8 @@ from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 import os
 
-df = pd.read_csv(os.path.join('/mount/src/project-rats', 'assets', 'dataset_summary.csv'))
-df_dicom = pd.read_parquet(os.path.join('/mount/src/project-rats', 'assets', 'train_dicom_tags.parquet'))
+df = pd.read_csv(os.path.join('assets', 'dataset_summary.csv'))
+df_dicom = pd.read_parquet(os.path.join('assets', 'train_dicom_tags.parquet'))
 
 @st.cache_data
 def n_scans_per_study():
@@ -179,3 +179,8 @@ def slice_thickness_distribution():
     _, center, _ = st.columns([1,3,1])
     center.pyplot(plt, transparent=True)
     normal_text("The bar chart show the distribution of slice thickness of every study in the provided dataset. The result shows that the thickess of the studies within the datset is not consistent. This may be due to the data are collected from different machines or equipments of different countries and institutes. From the distribution, 3.0mm is the most common thickness while 1.0mm follows after.")
+
+@st.cache_data
+def load_csv(path=os.path.join('assets', 'ground_truth.csv')):
+    data = pd.read_csv(path)
+    return data

@@ -17,7 +17,7 @@ import os
 st.set_page_config(
     page_title="Project RATS | EDA",
     layout="wide",
-    page_icon= Image.open(os.path.join('/mount/src/project-rats', 'static', 'favicons', 'favicon-16x16.png'))
+    page_icon= Image.open(os.path.join('static', 'favicons', 'favicon-16x16.png'))
 )
 
 def main():

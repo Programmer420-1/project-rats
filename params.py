@@ -16,3 +16,5 @@ MODEL_CHOICE = ('default', 'finetuned')
 GLOBAL_CSS = os.path.join('static', 'styles', 'global.css')
 OVERVIEW_CSS = os.path.join('static', 'styles', 'overview.css')
 MODEL_LAB_CSS = os.path.join('static', 'styles', 'model_lab.css')
+
+DEBUG = False
