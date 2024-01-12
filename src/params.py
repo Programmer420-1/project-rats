@@ -4,7 +4,7 @@ TEST_INFERENCE_API_BASEURL = "http://localhost:8000/infer_test"
 
 INFERENCE_STATUS_API_BASEURL = "http://localhost:8000/inference/status"
 
-MODEL_CHOICE = ('default', 'finetuned')
+MODEL_CHOICE = ('default')
 
 GLOBAL_CSS = "./static/styles/global.css"
 OVERVIEW_CSS = "./static/styles/overview.css"
