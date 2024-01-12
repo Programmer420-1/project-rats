@@ -106,6 +106,7 @@ def main():
                     st.session_state['patient_id'] = "0"
                     st.session_state['series_id'] = "0"
                     st.toast("Patient ID or Series ID not provided", icon="❗")
+                model_choice = 'default'
                 upload(uploaded_file, model_choice, dynamic_content)
         
     
