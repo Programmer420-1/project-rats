@@ -77,7 +77,7 @@ def main():
     # Dropdown selector
     model_choice = st.selectbox(
     '',
-    params.MODEL_CHOICE, label_visibility='hidden')
+    [params.MODEL_CHOICE[0]], label_visibility='hidden')
 
     vertical_gap(2)    
     st.subheader("Step 2: Upload and Infer Abdominal CT Study")
