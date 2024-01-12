@@ -11,7 +11,7 @@ PROD_TEST_INFERENCE_API_BASEURL = "http://34.30.94.255:8000/infer_test"
 
 PROD_INFERENCE_STATUS_API_BASEURL = "http://34.30.94.255:8000/inference/status"
 
-MODEL_CHOICE = ('default')
+MODEL_CHOICE = ('default', 'finetuned')
 
 GLOBAL_CSS = os.path.join('static', 'styles', 'global.css')
 OVERVIEW_CSS = os.path.join('static', 'styles', 'overview.css')
