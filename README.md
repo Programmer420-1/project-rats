@@ -7,7 +7,7 @@ This is a repository for the Data Science Project course I have taken in my fina
   <img src="static/imgs/Logo_text_hor_sub_dark.png" width="520" alt="Project RATS Logo"/>
 </p>
 
-*Project RATS* (**R**apid **A**bdominal **T**rauma **S**creening) aims to provide rapid CT assessment for patients at risks of abdominal trauma using deep learning. This project is inspired from a Kaggle open competition organized by RSNA back in 2023. A multi-staged model architecture proposed by Theo Viel in the same year is chosen to be adapted into this project due to its relatively efficient model size, ease of understanding and modest computing power requirements.
+*Project RATS* (**R**apid **A**bdominal **T**rauma **S**creening) aims to provide rapid CT assessment for patients at risks of abdominal trauma using deep learning. This project is inspired from a Kaggle open competition organized by RSNA back in 2023. A multi-staged model architecture proposed by [Theo Viel](https://github.com/TheoViel/kaggle_rsna_abdominal_trauma/tree/cleaning) in the same year is chosen to be adapted into this project due to its relatively efficient model size, ease of understanding and modest computing power requirements.
 
 Project RATS has further finetuned and improved the models in the whole image classification module of the system. The table below shows the result before and after finetuning.
 | Metric             | Before | After      | Remarks           |
